@@ -222,7 +222,9 @@ def create_benchmark(X=None, y=None, new_model_list=None, new_model_name_list=No
     df_all_scores = pd.DataFrame(np.array(all_scores),
                                      columns = col_names,
                                      index = idx)
-    display(df_all_scores)
+    #display(df_all_scores)
+    print(df_all_scores)
+
     ###############################################################
     # Helper function for matplotlib heatmap plotting
     ###############################################################
