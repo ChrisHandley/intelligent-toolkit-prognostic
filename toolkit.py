@@ -196,12 +196,13 @@ def create_benchmark(X=None, y=None, new_model_list=None, new_model_name_list=No
             y = np.reshape(y, (y.shape[0],)) # (n_row,)
         else:
             y = np.reshape(y, (-1,1)) # (n_row, 1)
-            
-        model_scores.append(cross_validate(models[i],
-                                X,
-                                y,
-                                cv=num_cv_fold,
-                                scoring=scores))
+        print("Test")
+        exit()
+        #model_scores.append(cross_validate(models[i],
+        #                        X,
+        #                        y,
+        #                        cv=num_cv_fold,
+        #                        scoring=scores))
         
     # combine mean and standard deviation in a single string
     def combine_mean_std_np(mean_array, std_array):
